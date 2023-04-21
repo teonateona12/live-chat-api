@@ -22,7 +22,7 @@ io.on("connection", (socket) => {
   socket.on("disconnect", () => {});
 });
 app.get("/api", (req, res) => {
-  req.send("Heloo");
+  res.send("Heloo");
 });
 
 server.listen(port);
