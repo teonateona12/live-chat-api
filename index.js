@@ -6,6 +6,6 @@ const app = express();
 app.use(cors());
 const server = http.createServer(app);
 
-server.listen(3001, () => {
+server.listen(3001 || process.env.PORT, () => {
   console.log("server running");
 });
